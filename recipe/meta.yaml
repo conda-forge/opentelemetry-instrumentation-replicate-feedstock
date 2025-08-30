@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-replicate" %}
-{% set version = "0.46.1" %}
+{% set version = "0.46.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_replicate-{{ version }}.tar.gz
-  sha256: d6efa14b113de4eab703dcc202e84ef57c03c0031d0e0c89f26e83524742f05c
+  sha256: 6a30009a072e0a69cad964b514a25517d100009721db110bb70bd9a563f406f5
 
 build:
   noarch: python
