@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-replicate
-  version: "0.62.3"
+  version: "0.62.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_replicate-${{ version }}.tar.gz
-  sha256: bd69474c44651992b490bce6c2f70dd3c2ad99bc20844b826879e6c7c9474af3
+  sha256: 139b84e0c6144cb9f49677ac9a9e32c29d3e7d5c35100d7dec08b131419c65ce
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
